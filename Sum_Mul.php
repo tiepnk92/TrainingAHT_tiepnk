@@ -83,8 +83,4 @@
      * Hiển thị kết quả tính tích 2 số nguyên a và b
      * */
         TinhTich($objCalulator->get_A(),$objCalulator->get_B());
-
-
-
-
 ?> 
