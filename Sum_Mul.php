@@ -3,27 +3,13 @@
     * Khai báo class Calulator
     * class Calulator khai 2 thuộc tính kiểu dữ liệu public :   
     *           $a : số nguyên thứ 1.
-    *           $b : số nguyên thứ 2
-    * constructor set_a
+    *           $b : số nguyên thứ 2.
     */
     class Calulator{
         public $a;
         public $b;
-        function set_A(int $a)
-        {
-            $this->a = $a;
-        }
-        function get_A()
-        {
-            return $this->a;
-        }
-        function set_B(int $b){
-            $this->b = $b;
-        }
-        function get_B(){
-            return $this->b;
-        }
-    }
+        
+    
     /**
      * Viết hàm tính tổng 2 số.
      *Cho phép nhập vào 2 chữ số a, b.
@@ -43,7 +29,7 @@
         { //Thông báo nếu người dùng nhập sai định dạng.
             echo "a và b phải là chữ số";
         }
-        //Trả về Tổng 2 chữ số
+        //Trả về Tổng 2 chữ sốs
         return $sum;
     }
     /**
@@ -69,18 +55,16 @@
      *                              ->set_A : số nguyên thứ 1.
      *                              ->set_B : số nguyên thứ 2.
      */
-    
+}
     $objCalulator = new Calulator();
-    $objCalulator->set_A(-1);
-    $objCalulator->set_B(8);
     /**
      * Gọi hàm tính tổng 
      * Hiển thị kết quả tính tổng 2 số nguyên a và b
      */
-        echo TinhTong($objCalulator->get_A(),$objCalulator->get_B());
+        echo $objCalulator->TinhTong(4,5);
     /**
      * gọi hàm tính tích
      * Hiển thị kết quả tính tích 2 số nguyên a và b
      * */
-        TinhTich($objCalulator->get_A(),$objCalulator->get_B());
+        echo $objCalulator->TinhTich(5,6);
 ?> 
